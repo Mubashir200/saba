@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saif Clinic - Appointments</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Book an Appointment</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="appointments.html">Appointments</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+    <section>
+        <form id="appointmentForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required>
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+            <label for="doctor">Doctor:</label>
+            <select id="doctor" name="doctor">
+                <option value="Dr. Syeda Sabah">Dr. Syeda Sabah</option>
+                <option value="Dr. Syeda Shifa Saniya">Dr. Syeda Shifa Saniya</option>
+            </select>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2024 Saif Clinic. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

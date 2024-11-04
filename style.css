@@ -1,0 +1,118 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff; /* Light background color */
+    color: #333; /* Dark text color */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header Styling */
+header {
+    background-color: #4CAF50; /* Fresh green color */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+header nav {
+    margin-top: 10px; /* Add margin for spacing */
+}
+
+header nav a {
+    color: #fff;
+    margin: 0 20px; /* Increased spacing */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+header nav a:hover {
+    color: #ffdd57; /* Change color on hover */
+}
+
+/* Section Styling */
+section {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Patient Details Section */
+.patient-details-section {
+    background-color: #fff; /* White background for the section */
+    color: #333; /* Dark text color */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Padding for content */
+    margin: 20px auto; /* Center the section */
+    width: 80%; /* Set width */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.patient-details-section h2 {
+    margin-bottom: 15px; /* Space below heading */
+}
+
+.patient-details-section p {
+    margin: 5px 0; /* Space between paragraphs */
+}
+
+/* Buttons */
+button {
+    background-color: #4CAF50; /* Fresh green color */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s; /* Transition for animations */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+button:active {
+    background-color: #388e3c; /* Change to a darker green when clicked */
+    transform: scale(0.95); /* Slightly shrink the button */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Reduce shadow on click */
+}
+
+button:focus {
+    outline: none; /* Remove default focus outline */
+}
+
+/* Footer */
+footer {
+    background-color: #333; /* Dark footer */
+    color: #fff; /* White text in footer */
+    text-align: center;
+    padding: 10px;
+    margin-top: auto; /* Push footer to the bottom */
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+header, section, footer {
+    animation: fadeIn 1s ease; /* Fade-in animation for sections */
+}

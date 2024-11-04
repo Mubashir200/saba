@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saif Clinic</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+    <header>
+        <h1>Welcome to Saif Clinic</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="appointments.html">Appointments</a>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Our Services</h2>
+        <p>We offer a variety of healthcare services.</p>
+        <button onclick="showDetails()">View Patient Details</button>
+    </section>
+
+    <section id="patient-details" class="patient-details-section" style="display: none;">
+        <h2>Patient Details</h2>
+        <div id="patient-info">
+            <p><strong>Name:</strong> John Doe</p>
+            <p><strong>Age:</strong> 30</p>
+            <p><strong>Gender:</strong> Male</p>
+            <p><strong>Address:</strong> 123 Main St, City, State</p>
+            <p><strong>Phone Number:</strong> (123) 456-7890</p>
+            <p><strong>Medical History:</strong> No known allergies, Previous surgeries: Appendix removal</p>
+        </div>
+        <button onclick="hideDetails()">Close</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Saif Clinic | Contact: <a href="mailto:syedasabah@gmail.com">syedasabah@gmail.com</a> | Phone: 9146117131 | Address: Rahemaniya</p>
+    </footer>
+
+    <script>
+        function showDetails() {
+            document.getElementById('patient-details').style.display = 'block'; // Show the section
+        }
+
+        function hideDetails() {
+            document.getElementById('patient-details').style.display = 'none'; // Hide the section
+        }
+    </script>
+</body>
+</html>
